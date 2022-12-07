@@ -1,0 +1,67 @@
+.navbar-position{
+    float: right;
+}
+
+.navbar-main{
+    padding-top: 5px;
+}
+.table-spacing {
+    padding-right: 1em;
+}
+
+#making-center {
+    text-align: center;
+}
+
+#HomePage-Intro{
+    background-color: rgb(238, 213, 180);
+    text-align: center;
+    padding: 8% 2% 0%;
+}
+
+#testimonials {
+    padding: 4% 5%;
+    text-align: center;
+    color: azure;
+    background-color: rgb(60, 53, 53);
+}
+
+
+#hospital-image{
+    max-width:80%;
+
+}
+
+#Homapage-1{
+}
+
+
+#footer-id{
+    text-align: center;
+    background-color: aqua;
+}
+
+
+    .btn-square-xl {
+    width: 200px !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    height: 200px !important;
+    text-align: center;
+    padding: 0px;
+    font-size:24px;
+    }
+
+.menuTrial-stye{
+    background-color: aqua;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.tablePasien{
+    margin: 20px;
+    margin-top: 10%;
+    text-align: center;
+    width: 100%;
+}
