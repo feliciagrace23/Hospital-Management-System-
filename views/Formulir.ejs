@@ -8,31 +8,29 @@
 
 <body>
     <h2>I. Identitas Pasien <em> (harap mengisi semua)</em></h2>
+    <form action="/Formulir" method="post">
     <table>
         <tr>
             <td> Nama Lengkap <em> (sesuai KTP)</em></td>
-            <td> <input type="text" id="myInput"></td>
+            <td> <input name="NamaLengkap" type="text" id="myInput"></td>
         </tr>
 
         <tr>
 
             <td> <label>Nama Ibu Kandung</label></td>
-            <td> <input type="text" id="myInput"></td>
+            <td> <input name="NamaIbu" type="text" id="myInput"></td>
         </tr>
 
         <tr>
             <td><label> Tempat & tanggal lahir</label></td>
-            <td> <input type="text"></td>
+            <td> <input name="TempatLahir" type="text"></td>
         </tr>
 
-        <tr>
-            <td><label>Alamat <em> (sesuai KTP)</em></label></td>
-            <td> <input type="text"></td>
-        </tr>
+ 
 
         <tr>
             <td> <label> Alamat <em> (Aktual)</em></label></td>
-            <td> <input type="text"></td>
+            <td> <input name="Domisili" type="text"></td>
         </tr>
 
         <tr>
@@ -47,22 +45,13 @@
 
         <tr>
             <td> <label> No Hp:</label></td>
-            <td> <input type="text"></td>
+            <td> <input name="NoHp" type="text"></td>
         </tr>
         
 
         <tr>
-            <td> <label>Pekerjaan/Bagian</label></td>
-            <td> <input type="text"></td>
-        </tr>
-        <tr>
-            <td> <label>Alamat Kantor</label></td>
-            <td> <input type="text"></td>
-        </tr>
-
-        <tr>
             <td> <label> Alergi</label></td>
-            <td> <input type="text"></td>
+            <td> <input name="Alergi" type="text"></td>
         </tr>
     </table>
 
@@ -73,23 +62,23 @@
     <table>
         <tr>
             <td> <label> Nama Lengkap <em> (Sesuai KTP)</em></label></td>
-            <td> <input type="text"></td>
+            <td> <input name="NamaLengkapWali" type="text"></td>
 
         </tr>
 
         <tr>
             <td> <label> Alamat Rumah </label></td>
-            <td> <input type="text"></td>
+            <td> <input name="DomisiliWali" type="text"></td>
         </tr>
 
         <tr>
             <td> <label> Pekerjaan/ bagian</label></td>
-            <td> <input type="text"></td>
+            <td> <input name="PekerjaanWali" type="text"></td>
         </tr>
 
         <tr>
             <td> <label> Hubungan dengan Pasien : </label></td>
-            <td> <input type="text"></td>
+            <td> <input name="HubunganWali" type="text"></td>
         </tr>
     </table>
 
@@ -101,49 +90,48 @@
     <table>
         <tr>
             <td> <label> Nama Dokter  </label></td>
-            <td> <input type="text"> </td>
+            <td> <input name="NamaDokter" type="text"> </td>
 
         </tr>
 
         <tr>
             <td> <label> Kelas Perawatan</label></td>
-            <td> <input type="text"></td>
+            <td> <input name="KelasPerawatan" type="text"></td>
         </tr>
 
         <tr>
             <td> <label> Dokter Pengirim </label></td>
-            <td> <input type="text"></td>
+            <td> <input name="DokterPengirim" type="text"></td>
         </tr>
 
 
         <tr>
             <td> <label> Dokter Penerima </label></td>
-            <td> <input type="text"></td>
+            <td> <input name="DokterPenerima" type="text"></td>
         </tr>
 
 
         <tr>
 
             <td> <label> Tanggal Masuk</label></td>
-            <td> <input type="datetime"></td>
+            <td> <input name="TanggalMasuk" type="datetime"></td>
 
         </tr>
 
         <tr>
             <td> <label> Keluhan</label></td>
-            <td> <input type="text"></td>
+            <td> <input name="Keluhan" type="text"></td>
         </tr>
 
 
         <tr>
 
             <td> </td>
-            <td><button type="button"> Submit</button></td>
-            <td> <button type="button">Cancel</button></td>
+            <td><button type="submit" onclick="location.href='/PatientAdmission'"> Submit</button></td>
         </tr>
 
     </table>
-
+</form> 
 
 
 </body>

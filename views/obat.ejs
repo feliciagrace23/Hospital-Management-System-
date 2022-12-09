@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obat</title>
+</head>
+<body>
+
+    <h1> Pilih obat</h1>
+    <p> Pasien : <input id="Pasien" type="text"> </p>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <table>
+                    <tr>
+                        <td> Pagi Hari </td>
+                        <td> <input id="obatPagi" type="text"></td>
+                    </tr>
+            
+                    <tr> 
+                        <td></td>
+                        <td> <input type="checkbox"placeholder="Nama obat"> Sebelum makan</td>
+                        <td> <input type="checkbox"> Sesudah makan</td>
+                    </tr>
+            
+                    <tr>
+                        <td> Siang Hari </td>
+                        <td> <input id="obatSiang" type="text"></td>
+                    </tr>
+            
+                    <tr> 
+                        <td></td>
+                        <td> <input type="checkbox" > Sebelum makan</td>
+                        <td> <input type="checkbox"> Sesudah makan</td>
+                    </tr>
+            
+                    <tr>
+                        <td> Malam Hari </td>
+                        <td> <input id="obatMalam" type="text"></td>
+                    </tr>
+            
+                    <tr> 
+                        <td></td>
+                        <td> <input type="checkbox"> Sebelum makan</td>
+                        <td> <input type="checkbox"> Sesudah makan</td>
+                    </tr>
+                    <tr>
+                        <td> Set Obat </td>
+                        <td> <select> <option> Vitamin C</option>
+                            <option> Vitamin Anti-Covid</option>
+                            <option> 1 Set vitamin tulang (Family Pack)</option>
+                            <option> 1 Set Vitamin ibu dan anak sehat </option>
+                        
+                        </select> </td>
+                    </tr>
+            
+                </table>
+            
+                    <h2> Obat Luar</h2>
+            
+            <table>
+            <tr>
+                <td><p> Jenis Obat</p></td>
+                <td> <input style="text"> </td>
+                </tr>
+                <tr></tr>
+                <td> Cara Pemakaian</td>
+                <td> <input style="width: 200px; height:60px" type="text"></td>
+            </tr>
+            
+            </table>
+               
+            <h1> Alergi</h1>
+            <table>
+                <tr>
+                    <td><p> Alergi</p></td>
+                    <td> <input style="width: 200px; height:60px" type="text"> </td>
+                    </tr>
+                    <tr></tr>
+                    <td> Efek Samping</td>
+                    <td> <input style="width: 200px; height:60px" type="text"></td>
+                </tr>
+            </table>
+            
+            <table>
+                <h2> Pesan Dokter</h2>
+            
+                <tr> <h3> Notes</h3></tr>
+                <tr><input style="width: 300px; height:60px" type="text" placeholder="Contoh : Habiskan dalam seminggu"></tr>
+            
+                <tr>
+                    <td></td>
+                    <td> <button type="Submit" onclick="location.href='/HomePage'"> Submit </button></td>
+                    <td> <button type="Submit" onclick="myFunction()"> Show Linamasa Obat </button> </td>
+                </tr>
+            </table>
+            </div>
+            <div class="col-5">
+                <h3 id="nama"></h3>
+                <br>
+                <p id="demo"></p>
+                <br>
+                <p id="demo1"></p>
+                <br>
+                <p id="demo2"></p>
+                <br>
+                <p id="waktu"> </p>
+
+            </div>
+
+
+        </div>
+        
+    </div>
+    
+
+<script>
+function myFunction(){
+    var returnObat = "Obat Pagi: " + document.getElementById("obatPagi").value + " Pukul 09:00-10:10 WIB";
+    var returnObatSiang = "Obat Siang: " + document.getElementById("obatSiang").value + " Pukul 12:00-13:00 WIB";
+    var returnObatMalam = "Obat Malam: " + document.getElementById("obatMalam").value + " Pukul 17:00-20:10 WIB";
+    document.getElementById("nama").innerHTML = document.getElementById("Pasien").value;
+    document.getElementById("demo").innerHTML = returnObat;
+    document.getElementById("demo1").innerHTML = returnObatSiang;
+    document.getElementById("demo2").innerHTML = returnObatMalam;
+    document.getElementById("waktu").innerHTML = "Konsumsi selama 7 hari, Jika ada keluhan harap berhenti konsumsi obat dan temui Dokter terdekat";
+}
+
+</script>
+
+</body>
+</html>
