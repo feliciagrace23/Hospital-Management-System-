@@ -117,17 +117,18 @@ function analisaCDSS(){
     
     var ansEmcai =  document.getElementById("emcai").checked;
     var result = " untuk berjaga-jaga silahkan lakukan Swab Antigen"
-    if (ansYes === "true"){
-        let result = " Positif, silahkan melakukan karantina mandiri";
-    };
-    if(ansNo === "true"){
-        let result = " Negatif"
-    };
-    if(ansEmcai === "true"){
-        let result = " Perlu melakukan Swab Antigen";
-    }
+    if (ansYes){
+        result = " Positif, silahkan melakukan karantina mandiri";
 
-    document.getElementById("kata").innerHTML = "Berdasarkan hasil analisa didapati pasien "  + document.getElementById("pasiencdss").value + result ;
+    }
+    else if(ansNo){
+        result = " Negatif"
+    }
+    else if(ansEmcai){
+        result = " Perlu melakukan Swab Antigen";
+    }
+    console.log(ansYes == true)
+    document.getElementById("kata").innerHTML = "Berdasarkan hasil analisa didapati pasien "  + document.getElementById("pasiencdss").value + result;
     
 }
 

@@ -77,8 +77,9 @@ app.post("/login", function (req, res) {
         if (err) {
             console.log(err);
         } else if (docs != undefined){
-            if (docs[0].pass == getPassword) {
+            if (docs[0].pass === getPassword) {
                 res.render("HomePage", { NamaUser: getEmail });
+                
             } else {
                 res.write("Password / email yang anda masukkan salah")
                 res.write("Silahkan login kembali atau buat akun baru")
@@ -178,6 +179,7 @@ app.post("/Formulir", function (req, res) {
 
 
 app.get("/DataPasien", function (req, res) {
+
     res.render("DataPasien");
 })
 
